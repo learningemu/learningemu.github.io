@@ -3,123 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Courses - Summer 2025 by Dr. Naeemul Hassan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Learning Emu - Online Courses by Dr. Hassan - Summer 2025</title>
+    <style>
+        :root {
+            --primary: #2a6496;
+            --secondary: #4a90e2;
+            --accent: #f8b500;
+            --light: #f5f5f5;
+            --dark: #333;
+            --success: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .intro {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .courses {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .courses {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .course {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .course-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .course-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .course-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .course-section h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.25rem;
+            display: inline-block;
+        }
+        
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+        
+        .cta {
+            background-color: var(--accent);
+            text-align: center;
+            padding: 2rem;
+            margin-top: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--success);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #218838;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+        }
+        
+        .contact-info a {
+            color: var(--light);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Summer 2025 Online Courses</h1>
-        <p class="instructor-intro">
-            Hello, I am <strong>Dr. Naeemul Hassan</strong>, an assistant professor at the University of Maryland at College Park.
-            I am offering two online courses this Summer 2025: <em>Introduction to Python Programming</em> and <em>Introduction to Data Science</em>.
-        </p>
-        <p class="deadline">
-            Please indicate your interest by <strong>May 25, 2025</strong> using the sign-up link below.
-        </p>
+        <div class="container">
+            <h1>Learning Emu</h1>
+            <h2>Summer 2025 Online Courses</h2>
+            <p>Learn Python Programming and Data Science with Dr. Naeemul Hassan</p>
+        </div>
     </header>
-
-    <main>
-        <section class="course">
-            <h2>1. Introduction to Python Programming</h2>
-
-            <h3>Concepts Covered:</h3>
-            <ul>
-                <li>Concept of Variables, Data Types</li>
-                <li>Data Structures [List, Dictionary, Set]</li>
-                <li>Conditional Statements</li>
-                <li>Loop</li>
-                <li>Function</li>
-                <li>Introduction to Pandas</li>
-                <li>Exploratory Data Analysis in Pandas</li>
-                <li>Data Visualization</li>
-                <li>Basic Natural Language Processing using Spacy</li>
-                <li>Capstone Project and Review</li>
-            </ul>
-
-            <h3>Logistics:</h3>
-            <ul>
-                <li>Duration: 2.5 months</li>
-                <li>Frequency: 1.5 hours per week (Total 15 hours)</li>
-                <li>Format: Online via Zoom</li>
-                <li>Recordings: Sessions will be recorded and available later.</li>
-            </ul>
-
-            <h3>Course Fees:</h3>
-            <p>Think about it as an investment you are doing on yourself to develop your skills. Costs cover online meeting arrangements, recording storage, and materials preparation.</p>
-            <ul>
-                <li>From Bangladesh: 10,000 Taka (Bkash)</li>
-                <li>From USA: 100 USD (Paypal, Zelle, etc.)</li>
-            </ul>
-
-            <h3>Schedule:</h3>
-            <ul>
-                <li>Tentative: June - August 2025</li>
-                <li>Specific days/times will be decided based on the availability of the majority of interested participants.</li>
-            </ul>
+    
+    <main class="container">
+        <section class="intro">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h2>About Learning Emu & the Instructor</h2>
+                    <p>Hello, I am Naeemul Hassan, an assistant professor at the University of Maryland at College Park. I am offering two courses this Summer 2025. Please indicate if you are interested in Introduction to Python Programming and/or Introduction to Data Science courses by <strong>May 25, 2025</strong>.</p>
+                    <p>If you have any questions, please feel free to reach out to me.</p>
+                    <div class="contact-info">
+                        <p><strong>Dr. Naeemul Hassan</strong></p>
+                        <p>Email: <a href="mailto:learningemu@gmail.com">learningemu@gmail.com</a></p>
+                        <p>Facebook: <a href="https://www.facebook.com/naffi" target="_blank">www.facebook.com/naffi</a></p>
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
+                    <img src="/api/placeholder/300/300" alt="Dr. Naeemul Hassan" style="border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%;">
+                </div>
+            </div>
         </section>
-
-        <hr>
-
-        <section class="course">
-            <h2>2. Introduction to Data Science</h2>
-
-            <h3>Concepts Covered:</h3>
-            <ul>
-                <li>Introduction to Data, Applications of Data Science, Course Logistics</li>
-                <li>Summarizing Data</li>
-                <li>Probability Refresher</li>
-                <li>Foundations for Inference</li>
-                <li>Inference for Categorical Data</li>
-                <li>Inference for Numerical Data</li>
-                <li>Linear Regression</li>
-                <li>Logistic and Multiple Regression</li>
-                <li>Unsupervised Learning</li>
-                <li>Supervised Learning</li>
-            </ul>
-
-            <h3>Logistics:</h3>
-            <ul>
-                <li>Duration: 2.5 months</li>
-                <li>Frequency: 1.5 hours per week (Total 15 hours)</li>
-                <li>Format: Online via Zoom</li>
-                <li>Recordings: Sessions will be recorded and available later.</li>
-            </ul>
-
-            <h3>Course Fees:</h3>
-             <p>Think about it as an investment you are doing on yourself to develop your skills. Costs cover online meeting arrangements, recording storage, and materials preparation.</p>
-           <ul>
-                <li>From Bangladesh: 15,000 Taka (Bkash)</li>
-                <li>From USA: 150 USD (Paypal, Zelle, etc.)</li>
-            </ul>
-
-             <h3>Schedule:</h3>
-            <ul>
-                <li>Tentative: June - August 2025</li>
-                <li>Specific days/times will be decided based on the availability of the majority of interested participants.</li>
-            </ul>
+        
+        <section class="cta" style="margin: 2rem 0;">
+            <h2>Interested in these courses?</h2>
+            <p>Please fill out the form by May 25, 2025 to express your interest</p>
+            <a href="https://forms.gle/7zHcnvb1DNcq41uh7" class="btn" target="_blank">Sign Up Now</a>
         </section>
-
-        <hr>
-
-        <section class="signup">
-            <h2>Sign Up Here!</h2>
-            <p>Interested in one or both courses? Please fill out the interest form by <strong>May 25, 2025</strong>.</p>
-            <a href="https://forms.gle/7zHcnvb1DNcq41uh7" target="_blank" class="signup-button">Sign Up / Express Interest</a>
-            <p>Filling out the form helps determine the final schedule and confirms your interest.</p>
+        
+        <div class="courses">
+            <div class="course">
+                <div class="course-header">
+                    <h2>Introduction to Python Programming</h2>
+                </div>
+                <div class="course-content">
+                    <div class="course-section">
+                        <h3>Course Content</h3>
+                        <ul>
+                            <li>Concept of Variables, Data Types</li>
+                            <li>Data Structures [List, Dictionary, Set]</li>
+                            <li>Conditional Statements</li>
+                            <li>Loop</li>
+                            <li>Function</li>
+                            <li>Introduction to Pandas</li>
+                            <li>Exploratory Data Analysis in Pandas</li>
+                            <li>Data Visualization</li>
+                            <li>Basic Natural Language Processing using Spacy</li>
+                            <li>Capstone Project and Review</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="course-section">
+                        <h3>Logistics</h3>
+                        <p>It will be a 2.5 months long course. 1.5 hrs per week. Total 15 hours. It will be offered online via Zoom. Sessions will be recorded.</p>
+                    </div>
+                    
+                    <div class="course-section">
+                        <h3>Course Fees</h3>
+                        <p>As much as I want to make the course affordable for all, there are costs involved to arrange online meetings, store recordings, and prepare materials. Think about it as an investment you are doing on yourself to develop your skills.</p>
+                        <ul>
+                            <li>From Bangladesh: 10,000 Taka (Bkash)</li>
+                            <li>From USA: 100 USD (Paypal, Zelle, etc)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="course-section">
+                        <h3>Time</h3>
+                        <p>Tentative schedule: June - August</p>
+                        <p>We will decide the time based on availability of the majority of the interested people.</p>
+                        <p>All sessions will be recorded in case you need to access the contents later.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course">
+                <div class="course-header">
+                    <h2>Introduction to Data Science</h2>
+                </div>
+                <div class="course-content">
+                    <div class="course-section">
+                        <h3>Course Content</h3>
+                        <ul>
+                            <li>Introduction to Data, Applications of Data Science, Course Logistics</li>
+                            <li>Summarizing Data</li>
+                            <li>Probability Refresher</li>
+                            <li>Foundations for Inference</li>
+                            <li>Inference for Categorical Data</li>
+                            <li>Inference for Numerical Data</li>
+                            <li>Linear Regression</li>
+                            <li>Logistic and Multiple Regression</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Supervised Learning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="course-section">
+                        <h3>Logistics</h3>
+                        <p>It will be a 2.5 months long course. 1.5 hrs per week. Total 15 hours. It will be offered online via Zoom. Sessions will be recorded.</p>
+                    </div>
+                    
+                    <div class="course-section">
+                        <h3>Course Fees</h3>
+                        <p>As much as I want to make the course affordable for all, there are costs involved to arrange online meetings, store recordings, and prepare materials. Think about it as an investment you are doing on yourself to develop your skills.</p>
+                        <ul>
+                            <li>From Bangladesh: 15,000 Taka (Bkash)</li>
+                            <li>From USA: 150 USD (Paypal, Zelle, etc)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="course-section">
+                        <h3>Time</h3>
+                        <p>Tentative schedule: June - August</p>
+                        <p>We will decide the time based on availability of the majority of the interested people.</p>
+                        <p>All sessions will be recorded in case you need to access the contents later.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="cta">
+            <h2>Interested in joining these courses?</h2>
+            <p>Please fill out the form by May 25, 2025 to express your interest</p>
+            <a href="https://forms.gle/7zHcnvb1DNcq41uh7" class="btn" target="_blank">Sign Up Now</a>
         </section>
-
     </main>
-
+    
     <footer>
-        <h2>Contact Information</h2>
-        <p>If you have any questions, please feel free to reach out:</p>
-        <p>
-            <strong>Dr. Naeemul Hassan</strong><br>
-            Email: <a href="mailto:learningemu@gmail.com">learningemu@gmail.com</a><br>
-            Facebook: <a href="https://www.facebook.com/naffi" target="_blank">www.facebook.com/naffi</a>
-        </p>
+        <div class="container">
+            <p>&copy; 2025 Learning Emu | Dr. Naeemul Hassan. All rights reserved.</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:learningemu@gmail.com">learningemu@gmail.com</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/naffi" target="_blank">www.facebook.com/naffi</a></p>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
