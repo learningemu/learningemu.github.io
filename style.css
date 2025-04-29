@@ -1,0 +1,167 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+    max-width: 900px; /* Max width for better readability on large screens */
+    margin: 20px auto; /* Center the content */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.instructor-intro {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.deadline {
+    font-weight: bold;
+    color: #d9534f; /* Reddish color for emphasis */
+    margin-bottom: 10px;
+}
+
+.course {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 4px solid #007bff; /* Blue accent border */
+    background-color: #f9f9f9;
+}
+
+.course h2 {
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.course h3 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+}
+
+.course ul {
+    list-style-position: inside;
+    margin-left: 5px; /* Indent list slightly */
+    margin-bottom: 10px;
+}
+
+.course li {
+    margin-bottom: 5px;
+}
+
+.course p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+.signup {
+    text-align: center;
+    padding: 25px;
+    background-color: #e7f3ff; /* Light blue background */
+    border: 1px solid #b3d7ff;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.signup h2 {
+     color: #0056b3;
+     margin-bottom: 15px;
+}
+
+.signup p {
+    margin-bottom: 20px;
+}
+
+.signup-button {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 0.9em;
+}
+
+footer h2 {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Basic responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
